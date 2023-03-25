@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to left,
+      #930bc0,
+      #6e0404);
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
