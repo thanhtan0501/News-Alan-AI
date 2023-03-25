@@ -30,13 +30,14 @@ const NewsCard = ({
             scrollToRef(elRefs[activeArticle]);
         }
     }, [index, activeArticle, elRefs]);
-
     return (
         <Card
             ref={elRefs[index]}
-            className={`flex flex-col justify-between border-b-[10px] border-solid border-white ${
-                activeArticle === index ? " border-[#22289a]" : null
-            }`}
+            className={`${
+                activeArticle === index
+                    ? " !border-[#097fb9] scale-[1.04]"
+                    : null
+            } flex flex-col justify-between border-b-[10px] border-solid border-white transition-all`}
         >
             <CardActionArea href={url} target="_blank" className="grow">
                 <CardMedia
